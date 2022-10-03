@@ -1,8 +1,8 @@
 .section-about {
   background-color: $light-color;
   padding: 25rem 0;
-  margin-top: -20vh;
-  z-index: -100;
+  margin-top: -10vh;
+  // z-index: -1;
   position: relative;
 
   &__backdrop {
