@@ -192,6 +192,12 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
+.btn--blue {
+  background-color: #27496d;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #27496d; }
+
 .btn::after {
   content: "";
   display: inline-block;
