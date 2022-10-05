@@ -75,7 +75,7 @@ body {
   color: #fff; }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Inconsolata", monospace;
   font-weight: 400;
   line-height: 1.7;
   color: #393e46; }
@@ -231,9 +231,9 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 54rem; }
   .card__side {
-    height: 52rem;
+    height: 54rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -250,6 +250,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #27496d, #142850); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #00a8cc, #0c7b93); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -264,6 +268,10 @@ body {
     border-top-right-radius: 3px; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #27496d, #142850), url(../images/peep1.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #00a8cc, #0c7b93), url(../images/peep-2.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../images/room-4.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -280,6 +288,10 @@ body {
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(39, 73, 109, 0.85), rgba(20, 40, 80, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(0, 168, 204, 0.85), rgba(12, 123, 147, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -289,6 +301,7 @@ body {
       .card__details ul li {
         text-align: center;
         font-size: 1.5rem;
+        font-weight: 600;
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
@@ -487,16 +500,13 @@ body {
 .section-about {
   background-color: #e7f6f2;
   padding: 25rem 0;
-  margin-top: -10vh;
-  position: relative; }
+  margin-top: -20vh; }
   .section-about__backdrop {
-    height: 20rem;
-    position: absolute; }
+    height: 20rem; }
     .section-about__backdrop--1 {
-      top: 20rem;
-      right: 1rem; }
+      float: right; }
     .section-about__backdrop--2 {
-      left: 1rem; }
+      float: left; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }

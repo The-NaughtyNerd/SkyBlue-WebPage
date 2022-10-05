@@ -1,12 +1,13 @@
 .card {
+  ///////////////////////////////////////////////////////
   // FUNCTIONALITY
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: 54rem;
 
   &__side {
-    height: 52rem;
+    height: 54rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -33,21 +34,21 @@
         );
       }
 
-      // &-2 {
-      //   background-image: linear-gradient(
-      //     to right bottom,
-      //     $color-primary-light,
-      //     $color-primary-dark
-      //   );
-      // }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-1,
+          $color-secondary-2
+        );
+      }
 
-      // &-3 {
-      //   background-image: linear-gradient(
-      //     to right bottom,
-      //     $color-tertiary-light,
-      //     $color-tertiary-dark
-      //   );
-      // }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
     }
   }
 
@@ -78,23 +79,23 @@
         url(../images/peep1.jpg);
     }
 
-    // &--2 {
-    //   background-image: linear-gradient(
-    //       to right bottom,
-    //       $color-primary-light,
-    //       $color-primary-dark
-    //     ),
-    //     url(../img/nat-6.jpg);
-    // }
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-1,
+          $color-secondary-2
+        ),
+        url(../images/peep-2.jpg);
+    }
 
-    // &--3 {
-    //   background-image: linear-gradient(
-    //       to right bottom,
-    //       $color-tertiary-light,
-    //       $color-tertiary-dark
-    //     ),
-    //     url(../img/nat-7.jpg);
-    // }
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../images/room-4.jpg);
+    }
   }
 
   &__heading {
@@ -122,21 +123,21 @@
       );
     }
 
-    // &--2 {
-    //   background-image: linear-gradient(
-    //     to right bottom,
-    //     rgba($color-primary-light, 0.85),
-    //     rgba($color-primary-dark, 0.85)
-    //   );
-    // }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-1, 0.85),
+        rgba($color-secondary-2, 0.85)
+      );
+    }
 
-    // &--3 {
-    //   background-image: linear-gradient(
-    //     to right bottom,
-    //     rgba($color-tertiary-light, 0.85),
-    //     rgba($color-tertiary-dark, 0.85)
-    //   );
-    // }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
   }
   &__details {
     padding: 3rem;
@@ -149,6 +150,7 @@
       li {
         text-align: center;
         font-size: 1.5rem;
+        font-weight: 600;
         padding: 1rem;
 
         &:not(:last-child) {
@@ -184,6 +186,7 @@
     font-weight: 100;
   }
 
+  ///////////////////////////////////////////////////////
   // CARD RESPONSIVENESS
 
   // @include respond(tab-port)
@@ -213,6 +216,7 @@
       padding: 1rem 3rem;
     }
 
+    ///////////////////////////////////////////////////////
     // BACK SIDE STYLING
     &__cta {
       position: relative;

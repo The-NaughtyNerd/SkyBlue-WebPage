@@ -9,7 +9,6 @@
   background-size: cover;
   background-position: center;
   position: relative;
-
   // clip-path: polygon(0 0, 100% 0, 100% 70%, 81% 100%, 17% 100%, 0 70%);
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polugon(0 0)) {
