@@ -87,7 +87,7 @@ body {
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation-name: moveinLeft;
@@ -169,7 +169,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.5;
   overflow: hidden; }
   .bg-video__content {
     height: 100%;
@@ -566,11 +566,10 @@ body {
   .header__logo {
     height: 15rem; }
   .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; }
 
 .row {
   max-width: 114rem;
