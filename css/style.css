@@ -445,6 +445,89 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  color: inherit;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s; }
+  @media only screen and (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #00a8cc; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #0c7b93; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+  @media only screen and (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
+
+.form__radio-input {
+  display: none; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem; }
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #00a8cc;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -0.4rem; }
+  .form__radio-button::after {
+    content: "";
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00a8cc;
+    opacity: 0;
+    transition: opacity 0.2s; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
+
 .review {
   width: 75%;
   margin: 0 auto;
@@ -598,7 +681,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 168, 204, 0.7), rgba(12, 123, 147, 0.7)), url(../images/room-5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 168, 204, 0.7), rgba(12, 123, 147, 0.7)), url(../images/book-4.jpeg);
   background-size: cover;
   margin-top: -8rem;
   background-position: right;
@@ -617,8 +700,37 @@ body {
       padding: 20rem 0 10rem 0; } }
 
 .section-reviews {
-  padding: 15rem 0;
+  padding: 14rem 0;
   position: relative; }
   @media only screen and (max-width: 56.25em) {
     .section-reviews {
       padding: 10rem 0; } }
+
+.section-signup {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #00a8cc, #0c7b93); }
+  @media only screen and (max-width: 56.25em) {
+    .section-signup {
+      padding: 10rem 0; } }
+
+.signup {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../images/room-5.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  @media only screen and (max-width: 75em) {
+    .signup {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../images/room-5.jpg);
+      background-size: cover; } }
+  @media only screen and (max-width: 56.25em) {
+    .signup {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../images/room-5.jpg); } }
+  .signup__form {
+    width: 50%;
+    padding: 6rem; }
+    @media only screen and (max-width: 75em) {
+      .signup__form {
+        width: 65%; } }
+    @media only screen and (max-width: 56.25em) {
+      .signup__form {
+        width: 100%; } }
