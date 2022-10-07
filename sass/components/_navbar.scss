@@ -1,0 +1,50 @@
+.navbar {
+  height: 7rem;
+  font-size: 2rem;
+  background-color: $light-color;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 15rem;
+  }
+
+  &__list {
+    align-self: stretch;
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    & > * {
+      padding: 0 2rem;
+      cursor: pointer;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+    }
+
+    & > *:hover {
+      background-color: $color-primary-light;
+      color: $light-color;
+    }
+
+    @include respond(phone) {
+      visibility: hidden;
+    }
+  }
+
+  &__item {
+    margin-right: 1.5rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
