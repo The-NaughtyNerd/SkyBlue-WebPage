@@ -31,6 +31,10 @@
       background-color: $color-primary-light;
       color: $light-color;
     }
+
+    @include respond(phone) {
+      visibility: hidden;
+    }
   }
 
   &__item {
