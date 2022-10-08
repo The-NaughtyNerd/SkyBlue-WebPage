@@ -529,6 +529,39 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.navbar {
+  height: 7rem;
+  font-size: 2rem;
+  background-color: #e7f6f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navbar__logo {
+    height: 15rem; }
+  .navbar__list {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    list-style: none; }
+    .navbar__list > * {
+      padding: 0 2rem;
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+    .navbar__list > *:hover {
+      background-color: #27496d;
+      color: #e7f6f2; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar__list {
+        visibility: hidden; } }
+  .navbar__item {
+    margin-right: 1.5rem; }
+  .navbar__link:link, .navbar__link:visited {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase; }
+
 .review {
   width: 75%;
   margin: 0 auto;
