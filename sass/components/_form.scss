@@ -1,0 +1,43 @@
+.form {
+  &__group:not(:last-child) {
+  }
+
+  &__input {
+    @include respond(tab-port) {
+    }
+
+    &:focus {
+    }
+
+    &:focus:invalid {
+    }
+
+    &::-webkit-input-placeholder {
+    }
+  }
+
+  &__label {
+  }
+
+  &__input:placeholder-shown + &__label {
+  }
+
+  &__radio-group {
+    @include respond(tab-port) {
+    }
+  }
+
+  &__radio-input {
+  }
+
+  &__radio-label {
+  }
+
+  &__radio-button {
+    &::after {
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+  }
+}
