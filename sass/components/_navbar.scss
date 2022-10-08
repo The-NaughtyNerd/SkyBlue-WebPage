@@ -32,7 +32,7 @@
       color: $light-color;
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       visibility: hidden;
     }
   }

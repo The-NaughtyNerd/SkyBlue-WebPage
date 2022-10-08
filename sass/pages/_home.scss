@@ -7,6 +7,10 @@
     height: 20rem;
     // position: relative;
 
+    @include respond(phone) {
+      height: 10rem;
+    }
+
     &--1 {
       float: right;
       // top: 20rem;
@@ -16,6 +20,11 @@
     &--2 {
       float: left;
       // left: 1rem;
+
+      @include respond(phone) {
+        clear: left;
+        margin-bottom: 200px;
+      }
     }
   }
 
@@ -36,7 +45,7 @@
   margin-top: -8rem;
   background-position: right;
 
-  clip-path: polygon(0 0, 51% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
   // clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
   // transform: skewY(-7deg);
 
@@ -45,8 +54,9 @@
   // }
 
   @include respond(tab-port) {
-    padding: 10rem 0;
-    clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
+    padding: 15rem 0 10rem 0;
+    // clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
+    margin-top: -14rem;
   }
 }
 
