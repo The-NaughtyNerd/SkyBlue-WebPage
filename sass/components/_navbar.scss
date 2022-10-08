@@ -47,4 +47,8 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  &__link:hover {
+    transform: translateY(-1rem);
+  }
 }

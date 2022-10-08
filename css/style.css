@@ -561,6 +561,8 @@ body {
     color: inherit;
     text-decoration: none;
     text-transform: uppercase; }
+  .navbar__link:hover {
+    transform: translateY(-1rem); }
 
 .review {
   width: 75%;
