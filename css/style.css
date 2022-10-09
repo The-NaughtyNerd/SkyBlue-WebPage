@@ -237,11 +237,17 @@ body {
   padding: 3px;
   transition: all 0.2s; }
 
+.btn-text span {
+  margin-left: 3px;
+  transition: margin-left 0.2s; }
+
 .btn-text:hover {
   background-color: #00a8cc;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
+  .btn-text:hover span {
+    margin-left: 8px; }
 
 .btn-text:active {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
@@ -561,8 +567,6 @@ body {
     color: inherit;
     text-decoration: none;
     text-transform: uppercase; }
-  .navbar__link:hover {
-    transform: translateY(-1rem); }
 
 .review {
   width: 75%;
