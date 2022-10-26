@@ -1,7 +1,13 @@
-# Skyblue WebPage
+# SKYBLUE <img src="./images/logo-1.png" width=25px height=25px>
 
 A Website for a company that provides reading service. Bookshops, Libraries, Clubs e.tc.
 
-# Subheader
+## Built with:
 
-My first git project
+- HTML
+- CSS
+- SASS
+
+## Live Demo
+
+[Live Demo Link](https://the-naughtynerd.github.io/SkyBlue-WebPage/)
